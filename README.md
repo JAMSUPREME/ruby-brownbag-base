@@ -9,6 +9,7 @@ _(I think these are the right links...)_
 - Docker: https://hub.docker.com/search/?type=edition&offering=community
 - Docker Compose: https://docs.docker.com/compose/install/
 
+**Actual steps:**
 - `docker-compose up`
 - Navigate to `localhost:4001` to see the rails welcome page
 
