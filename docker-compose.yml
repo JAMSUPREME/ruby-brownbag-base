@@ -1,21 +1,20 @@
 version: '3'
 services:
   # Note: Service name and build dir don't need to line up
-  # TODO: Figure out if the dockerfile is overlapping with the compose command?
   dumpster-api:
     build: dumpster-api
-    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 4001 -b '0.0.0.0'"
+    command: bash -c "rm -f tmp/pids/server.pid && bundle install && bundle exec rails s -p 4001 -b '0.0.0.0'"
     # This will connect our local directory /dumpster-api with the docker file system
     volumes:
-      - .dumpster-api:/dumpster-api-vol
+      - ./dumpster-api:/dumpster-api-vol
     ports:
       - "4001:4001"
   rails-client:
     build: rails-client
-    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3001 -b '0.0.0.0'"
-    # This will connect our local directory /dumpster-api with the docker file system
+    command: bash -c "rm -f tmp/pids/server.pid && bundle install && bundle exec rails s -p 3001 -b '0.0.0.0'"
+    # This will connect our local directory /rails-client with the docker file system
     volumes:
-      - .rails-client:/rails-client-vol
+      - ./rails-client:/rails-client-vol
     ports:
       - "3001:3001"
     depends_on:
