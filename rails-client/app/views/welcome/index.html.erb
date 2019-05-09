@@ -9,7 +9,7 @@
 
   <%= form_tag get_info_path do %>
       <div><b>Select a magic number!</b></div>
-      <div><%= text_field_tag('magic_number', nil, placeholder: 'Enter any number', type: 'number') %></div>
+      <div><%= text_field_tag('magic_number', nil, placeholder: 'Enter any number') %></div>
 
       <div>&nbsp;</div>
       <div><%= submit_tag 'Roll the dice!' %></div>

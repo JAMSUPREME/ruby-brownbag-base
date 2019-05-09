@@ -5,7 +5,8 @@ class WelcomeController < ApplicationController
   end
 
   def retrieve_from_api
-    url = 'http://dumpster-api:4001/info'
+    magic_number = params[:magic_number]
+    url = "http://dumpster-api:4001/info/#{magic_number}"
 
     r = Typhoeus.get(url)
 
