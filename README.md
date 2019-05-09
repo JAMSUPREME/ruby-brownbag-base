@@ -10,8 +10,12 @@ _(I think these are the right links...)_
 - Docker Compose: https://docs.docker.com/compose/install/
 
 **Actual steps:**
+- `docker-compose build` _(You could technically skip this but whenever you bash onto a new container it would need to `bundle install`)_
 - `docker-compose up`
 - Navigate to `localhost:4001` to see the rails welcome page
+
+**Helpful commands:**
+- If you want to open up another shell, you can use `docker-compose run rails-client bash`
 
 # Contents
 
