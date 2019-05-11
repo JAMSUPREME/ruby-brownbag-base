@@ -27,6 +27,8 @@ It currently contains two live APIs:
   - Will be our first brown bag material and a look at a real mess of an API
   - Could be repurposed if you wanted to be lazy and not deal with docker stuff
   
+TODO: Explain how tests are only as good as the code they test. Messy code = messy tests.
+  
 # How to add another app
 
 It should only require a few steps:
