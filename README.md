@@ -16,6 +16,7 @@ _(I think these are the right links...)_
 
 **Helpful commands:**
 - If you want to open up another shell, you can use `docker-compose run rails-client bash`
+- If you run generators or create other things from **within** the docker container, you will need to run `sudo chown -R $USER:$USER .` within your Github directory (outside the container) so that you can edit things from your IDE
 
 # Contents
 
