@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_11_181944) do
+ActiveRecord::Schema.define(version: 2019_05_11_182127) do
 
   create_table "changesets", force: :cascade do |t|
     t.string "user_id"
