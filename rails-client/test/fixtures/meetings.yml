@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: MyString
+  time: 2019-05-11 18:43:37
+  description: MyString
+  purpose: MyString
+  max_attendees: 1
+
+two:
+  location: MyString
+  time: 2019-05-11 18:43:37
+  description: MyString
+  purpose: MyString
+  max_attendees: 1

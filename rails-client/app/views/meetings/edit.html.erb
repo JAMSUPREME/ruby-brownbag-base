@@ -1,0 +1,10 @@
+<h1>Editing Meeting</h1>
+
+<% if flash[:error] %>
+    <div style="font-size: 2em; color: #cc0000"><b><%= flash[:error] %></b></div>
+<% end %>
+
+<%= render 'form', meeting: @meeting %>
+
+<%= link_to 'Show', @meeting %> |
+<%= link_to 'Back', meetings_path %>

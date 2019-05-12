@@ -10,6 +10,11 @@
   </head>
 
   <body>
+    <div>You are currently logged in as: <%= @user.full_name %></div>
+    <%= form_tag change_user_path do  %>
+      Change user? <%= select_tag 'new_user_id', options_from_collection_for_select(@all_users, "id", "full_name") %>
+      <%= submit_tag 'Change' %>
+    <% end %>
     <%= yield %>
   </body>
 </html>

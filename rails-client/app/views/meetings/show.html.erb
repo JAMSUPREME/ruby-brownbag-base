@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @meeting.location %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @meeting.time %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @meeting.description %>
+</p>
+
+<p>
+  <strong>Purpose:</strong>
+  <%= @meeting.purpose %>
+</p>
+
+<p>
+  <strong>Max attendees:</strong>
+  <%= @meeting.max_attendees %>
+</p>
+
+<%= link_to 'Edit', edit_meeting_path(@meeting) %> |
+<%= link_to 'Back', meetings_path %>
