@@ -11,6 +11,10 @@
     </div>
   <% end %>
 
+  <!-- Pass in the existing changeset ID and time so we can pull changes that occurred between now and then-->
+  <%= form.hidden_field :existing_changeset_id, value: meeting.changeset_id %>
+  <%= form.hidden_field :existing_changeset_time, value: meeting.changeset_time %>
+
   <div class="field">
     <%= form.label :location %>
     <%= form.text_field :location %>
